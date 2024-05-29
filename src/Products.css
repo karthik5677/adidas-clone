@@ -1,0 +1,206 @@
+.carttoppicks{font-size:27px;font-weight:700;margin: 40px 0px 40px 22px;}
+
+.CARTrecomdationswrap{
+    /* border:1px solid rgba(0, 0, 0, 0.888); */
+    /* background-color: rgb(217, 217, 217); */
+    display:flex;
+    justify-content: space-evenly;
+    width:715px;
+    height:206px;
+    margin-left: 18px;
+    margin-top: 30px;
+
+  }
+
+.buttonproductpage{background-color: initial;border: none;}
+  
+.CARTrecomdationsobj{
+    /* border: 1px solid rgb(255, 251, 0); */
+    position: relative;
+    font-size:15px;
+    font-weight: 300;
+    margin-right: 10px;
+     /* for making page longer at the bottom */margin-bottom: 300px;
+    height: 208px;width:167px;
+  }
+
+.CARTrecomdationsobj1{
+    /* border: 1px solid rgb(255, 60, 60); */
+    height: 165px;width:165px;
+}
+
+.CARTrecomdationsobj:hover{
+    border: 1px solid rgb(0, 0, 0);
+  }
+.slider{width:710px;  /* for making page longer at the bottom */margin-bottom: 300px;}
+
+
+
+  /* MEN */
+
+.v1{height: 300px;width: 300px;border: 1px solid black}
+
+.heartbuttonpng{position: absolute;margin: 20px 0px 0px 285px;height:18px;width:20px;}
+.buttonforview{all: unset;}
+
+
+.viewbox1{height: 1000px;border:1px solid rgb(255, 255, 255);display: flex}
+.viewbox1part1{height: 560px;width:1063px;border:1px solid rgb(255, 255, 255);display: flex;cursor:crosshair;overflow: hidden;overflow-x: hidden }
+.viewbox1part2{height: 800px;width:370px;border:2px solid rgb(255, 255, 255);margin-left:45px}
+
+.viewphoto{height: 560px;width:529px}
+/* .viewphoto:hover{transform: scale(1.8)} */
+.viewphotomirrored{height:560px;width:529px;transform: scaleX(-1);margin-left:2px;}
+.ratingstarsymbol{margin-left:188px;}
+.mrpwordcolor{font-size:14px;font-weight: 700;margin-top: 20px;}
+.mrpwordsize{font-size:14px;font-weight: 700;margin-top:20px;}
+.productcolorbox{height: 80px;width: 250px;border :1px solid rgb(255, 255, 255);margin-top: 8px;color: rgba(255, 0, 0, 0.548);display: flex;}
+.viewphotoforcolorselection{height: 80px;}
+.mrpwordcolorlist{font-size:13px;font-weight: 400;margin-top:3px;}
+.mrpword{font-size:13px;margin: 8px 0px 0px 0px;}
+.mrpwordtax{font-size:13px}
+.ratingsviews{margin-top: 30px;font-size:14px;}
+.mrp{color: red;font-weight: 600;}
+.mrpword1{font-size:13px;font-weight: 300;}
+.viewPRdName{font-size:28px;font-weight: 700;margin: 5px 0px 0px 0px;}
+
+.viewingpageheartbutton{height: 23px;width: 25px}
+
+.sizeboxestable{width: 368px;height: 122px;border-collapse: collapse;margin-top: 8px;border:1px solid rgb(255, 255, 255)}
+
+.sizeselectingbutton{border: 1px solid rgba(0, 0, 0, 0.073);background-color: rgb(255, 255, 255);height: 40px;width:70px}
+.sizeselectingbutton1{border: 1px solid rgba(0, 0, 0, 0.073);background-color: rgb(0, 0, 0);height: 40px;width:70px;color: #ffffff;border: 1px solid rgba(0, 0, 0, 0.073);}
+.sizeselectingbutton:hover{color: #ffffff;background-color: rgb(0, 0, 0);cursor: pointer;border-left: 1px solid rgb(255, 255, 255);border-right: 1px solid rgb(255, 255, 255)}
+
+
+.addingbox{display: flex;border: 1px solid rgb(255, 255, 255);margin-top: 30px;height: 50px;}
+.addtocartmain{margin-top:0px;color: #ffffff;background-color: rgb(0, 0, 0);height: 50px;width: 307px;font-size:15px;display: flex;align-items: center;justify-content: space-between;transition: 200ms;}
+.stockmessge{color: rgb(255, 0, 0);font-size:12px;border: 1px solid rgb(255, 255, 255);margin-top:10px}
+.addtocartmain:hover{color: rgb(161, 161, 161);cursor: pointer}
+.addtocartmainwhishlistbox{height: 50px;width:50px;border: 1px solid rgb(0, 0, 0);margin: 0px 0px 0px 10px;display: flex;align-items: center;justify-content: center;font-size:22px;}
+.linkstoview{color: black;text-decoration: none;}
+.youmayalsolike{font-size:30px;font-weight:700;margin: 0px 0px 0px 18px;}
+
+
+.returndetails{border: 1px solid rgb(255, 255, 255);font-size:14px;font-weight: 400;margin-top:3px;color: rgb(0, 0, 0);
+  display: flex;height: 150px;flex-direction: column;justify-content: space-between;margin-top: 20px;text-decoration: underline;}
+
+
+.promobutton{background-color: #ffffff;border: 1px solid rgb(255, 255, 255);font-size: 17px;text-decoration: underline;}
+.promobutton:hover{background-color: #000000;color: #ffffff;width:120px;;font-size: 17px}
+.promocode{border: 1px solid rgb(0, 0, 0);height: 40px;width: 300px;}
+.promoouterbox{display: flex;}
+.promobuttonadd{width: 55px;background-color: #ffffff;border: 1px solid rgb(0, 0, 0);border-left: 1px solid rgb(255, 255, 255);font-size:28px;height: 40px;font-weight: 300;}
+.redcolor{color: red;}
+
+
+/* review area below the image */
+.reviewbox{border-right: 1px solid rgb(191, 191, 191);height:800px}
+.reviewbox1{border-top: 1px solid rgb(191, 191, 191);width:850px;height:200px;margin: 30px 0px 0px 80px}
+.reviewbox2{border-bottom: 1px solid rgb(191, 191, 191);width:950px;height:200px}
+.reviewbox1heading{font-size:25px;font-weight:500;margin: 30px 0px 0px 80px}
+.subheading1{font-size:19px;font-weight:600;margin: 20px 0px 0px 80px}
+.subheading2{font-size:13px;font-weight:300;margin: 5px 0px 0px 80px}
+
+
+
+
+
+/* popupmessage */
+.popupbackground{border: 1px solid rgb(0, 0, 0);width: 100% ;height: 1000px;position: absolute;background-color: #000000;opacity: 70%;cursor: default;}
+.popupmessagebox:hover{cursor:default}
+
+.popupmessagebox{border:1px solid rgb(155, 155, 155);width: 880px ;height: 600px;position:absolute;background-color: #ffffff;margin-left: 20%;margin-top: 30px;}
+.popupheading{margin: 20px 0px 0px 25px;font-size:30px;font-weight:700;}
+.popupmessageboxinside{display: flex;border: 1px solid rgb(255, 255, 255);width:810px ;height:410px;margin: 35px 0px 0px 30px;}
+
+.popupmessagebox1{border-right: 1px solid  rgb(191, 191, 191);width:390px ;height:380px;display: flex;}
+.popheader{display: flex}
+.popclosebutton{border: 1px solid rgb(0, 0, 0);width:35px;height:35px;margin: 27px 0px 0px 330px;background-color: #000000;color: #ffffff;font-size: 24px;}
+.popclosebutton:hover{color: #adadad;cursor:pointer}
+.popupmessagebox1part1{border: 1px solid #ffffff;width:184px ;height:300px;}
+.popupboximage{width:160px ;height:160px}
+.popupmessagebox1part2{border: 1px solid rgb(255, 255, 255);width:184px ;height:300px;}
+.popname{font-weight: 500;font-size:18px;}.popprice{font-weight: 500;color: rgb(201, 0, 0);margin: 15px 0px 10px 0px;}.popcolor,.popsize,.popquantity{font-size: 15px;margin: 5px 0px 0px 0px;}
+
+.popupmessagebox2{border: 1px solid rgb(255, 255, 255);width:369px ;height:400px;margin-left: 30px;}
+.popupmessagebox2upper{border-bottom: 1px solid  rgb(191, 191, 191);width:339px ;height:135px;margin-left:15px;}
+.popyourbag{font-size:17px;font-weight: 500;}.popyouritem{font-size:15px;margin-top: 15px;}
+.popupmessagebox2lower{border: 1px solid rgb(255, 255, 255);width:339px ;height:250px;margin-left: 15px}
+.upper1{display: flex;font-size:15px}
+.upper1values1{margin-left: 129px;}.upper1values2{margin-left: 166px;}
+
+.upper2{display: flex;font-size:16px;font-weight: 600;margin-top: 20px;}
+.upper2values1{margin-left: 219px}.upper2values2{font-weight:400;font-size:14px;color: rgb(248, 0, 0);}
+
+.popbutton1{color: #ffffff;background-color: rgb(0, 0, 0);height: 50px;width: 337px;font-size:15px;margin: 30px 0px 10px 0px;display: flex;align-items: center;justify-content: space-between;}
+.popbutton2{margin-top: 20px;border: 1px solid rgb(0, 0, 0);color: #000000;background-color: rgb(255, 255, 255);height: 50px;width: 337px;font-size:15px;display: flex;align-items: center;justify-content: space-between}
+.popbutton1:hover,.popbutton2:hover{cursor: pointer;color: #828282;transition: 200ms;}
+
+/* page */
+.loginmessage{margin: 60px 0px 0px 200px;font-size:37px;font-weight:600;}
+
+.loginbutton{text-decoration: none;color: #ffffff;background-color: rgb(0, 0, 0);height: 40px;width: 250px;margin: 10px 0px 0px 200px ;font-size:medium;display: flex;align-items: center;justify-content: center;}
+.loginbutton:hover{color: gray;}
+
+.headerbox1{height: 80px;border-bottom: 1px solid rgb(191, 191, 191);display: flex;align-items: center}
+.headerbox1name{margin: 0px 0px 0px 200px;font-size:18px;font-weight:700;}
+.cartcountpage{background-color: rgb(63, 86, 199);font-weight:600;color: rgb(255, 255, 255);width:20px;height:20px;border-radius:9px;display: flex;align-items: center;justify-content: center;font-size: 13px;margin: 0px 0px 18px 1326px;position: absolute;}
+
+.headerbox2{height: 120px;border: 1px solid rgb(255, 255, 255);display: flex;flex-direction:column;align-items: center;justify-content: center;}
+.headerbox2checkout{font-size:30px;font-weight:600;}
+.headerbox2items{font-size:15px;font-weight:500;color: rgb(97, 97, 97)}
+.checkoutpagebox1{height: 820px;border: 1px solid rgb(255, 255, 255);display: flex;}
+
+.checkoutpagebox1a{height: 820px;width:600px;border: 2px solid rgb(255, 255, 255);margin-left: 200px;}
+.contactbox{height: 120px;border-bottom: 1px solid rgb(191, 191, 191)}
+.contactheading{font-size:18px;font-weight:600;margin-top:20px;margin-bottom: 20px;}
+.contactgmail{font-size:14px;margin-top: 20px;}
+.inputboxadressdetails{height:50px;width:290px;}
+.confirmorderutton{text-decoration: none;color: #ffffff;background-color: rgb(0, 0, 0);height: 50px;width: 290px;margin: 60px 0px 0px 0px ;font-size:medium;display: flex;align-items: center;justify-content: center;}
+.confirmorderutton:hover{color: #828282;transition: 200ms;}
+.headerbox1carticon{width:32px;height:30px;margin: 8px 0px 0px 995px;}
+
+
+.checkoutpagebox1b{height: 280px;width:200px;border-bottom: 1px solid rgb(191, 191, 191);margin-left: 130px;}
+
+.checkoutpagebox1c{height: 280px;width:200px;border-bottom: 1px solid rgb(191, 191, 191);text-align: end;}
+.editoption{margin-top: 20px;color: #000000;letter-spacing: 1px;font-size: 14px;margin-bottom: 20px;font-weight: 500;}
+.checkouttot{font-size: 14px;}
+.checkouttotbold{font-size: 14px;margin-top:15px}
+
+.cardnumber{color: rgb(255, 255, 255);font-size: 15px;position: absolute;margin: 100px 0px 0px 80px ;}
+.debitcardimage{height: 200px;width: 320px;}
+
+/* Womens */
+.womenswholepage{background-color: rgb(255, 255, 255);height: 1800px;}
+
+.mainboxcatelog{height:auto;width: 1290px;border: 1px solid rgb(255, 255, 255);display: grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-row-gap:10px;grid-column-gap:1px;;margin:40px 0px 0px 120px;}
+
+/* responsive functionality */
+@media screen and (max-width: 768px) {
+  .mainboxcatelog{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+.womenpageheader{display: flex;border:1px solid rgb(255, 255, 255)}
+.womenheading1{font-size:13px;margin: 65px 0px 0px 5px;color: #747474;}
+.Womenpageheading{font-size:38px;font-weight:700;margin: 40px 0px 0px 120px}
+.womensubheading{font-size:15px;font-weight:300;margin: 0px 0px 0px 120px}
+.prodbox{height: 370px;width: 320px;border: 1px solid rgb(255, 255, 255);font-size:15px;font-weight: 300}
+.prodbox:hover{height: 370px;width: 320px;border: 1px solid rgb(0, 0, 0);font-size:15px;font-weight: 300;
+.productprice{color: #ff0000;margin: 268px 0px 0px 4px;transition: 300ms;}}
+.productimage{height: 300px;width: 318px;}
+.productprice{position: absolute;margin: 277px 0px 0px 4px;background-color: #ffffff;}
+
+/* wishlistpage */
+.wholewishlistpage{height: 900px;background-color: aliceblue;}
+.wishlistheading{margin: 80px 0px 0px 200px;font-size:30px;font-weight:600;}
+.wishlistsubheading{margin: 0px 0px 0px 200px;font-size:15px;font-weight:300;}
+.wishlistbox1{display: grid;border: 1px solid rgb(255, 255, 255);height:auto;width:970px;grid-template-columns: 1fr 1fr 1fr 1fr ;grid-column-gap: 14px;grid-row-gap:20px ;margin: 30px 0px 0px 200px}
+.wishlistbox2{height:260px;width:240px;font-size:15px;font-weight: 300}
+.wishboximage{height:220px;width:238px}
+.wishboxprice{position: absolute;margin: 200px 0px 0px 4px;background-color: #ffffff;color: #ff0000;}
+.wishlistbox2:hover{.wishboxprice{margin: 190px 0px 0px 4px;transition: 300ms}border: 1px solid black}
+.wishboxheart{height:18px;width:20px;margin: 10px 0px 0px 208px;position: absolute;}
+.wishlistheading1{font-size:13px;margin:96px 0px 0px 5px;color: #747474;}
