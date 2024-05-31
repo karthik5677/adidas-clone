@@ -1,18 +1,9 @@
-import { BrowserRouter, Routes,Route ,Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import { StoreState } from './StoreContext';
-import React, {  useContext, useState } from 'react'
 import img1 from './images/carticon.png'
-import Debitcrd from './Debitcrd';
 
 function Page() {
-
-  const{activeStatus,setActiveStatus,userName,setUserName,total,setTotal,price,setPrice,image,setImage,name,setName,cart,setCart,userdetails,setUserdetails}=StoreState();
-  
-
-
-
-
-
+  const{activeStatus,total,cart,userdetails}=StoreState();
   return (
     <div className='Pagejsscreen'>
 
@@ -26,7 +17,7 @@ function Page() {
           <div className='headerbox1'>
             <p className='headerbox1name'>HI, KARTHIK!</p>
             <p className='cartcountpage' >{cart.length}</p>
-            <img className='headerbox1carticon' src={img1}></img>
+            <img className='headerbox1carticon' src={img1} alt='adiddaslogo'></img>
           </div>
           <div className='headerbox2'>
             <p className='headerbox2checkout'>CHECKOUT</p>

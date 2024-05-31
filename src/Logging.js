@@ -1,8 +1,7 @@
 import face from './images/Facebook.jpg'
 import apple from './images/apple-logo-transparent.jpg'
 import gog from './images/Google.jpg'
-import { BrowserRouter, Routes,Route ,Link } from 'react-router-dom';
-import Pf from './Pf'; 
+import {Link } from 'react-router-dom';
 import { StoreState } from './StoreContext';
 import React, { useState } from 'react'
 
@@ -70,9 +69,9 @@ function Signup() {
               <form> 
                 <h5>Login or Signup</h5> 
                 <div className='socialmedia'>
-                  <div className='mediabox'><a href='https://www.apple.com/in/'> <img className='mediaboximg' src={apple}></img></a></div>
-                  <div className='mediabox'><a href='https://www.facebook.com/login/'><img className='mediaboximg' src={face}></img></a></div>
-                  <div className='mediabox'><a href='https://www.google.com/'><img className='mediaboximg' src={gog}></img></a></div>
+                  <div className='mediabox'><a href='https://www.apple.com/in/'> <img className='mediaboximg' src={apple} alt='adiddaslogo'></img></a></div>
+                  <div className='mediabox'><a href='https://www.facebook.com/login/'><img className='mediaboximg' src={face} alt='adiddaslogo'></img></a></div>
+                  <div className='mediabox'><a href='https://www.google.com/'><img className='mediaboximg' src={gog} alt='adiddaslogo'></img></a></div>
                 </div>
                 <input className='email' placeholder='  EMAIL ADDRESS *' type='email' value={email} onChange={(e)=>handleemail(e.target.value)}></input><br></br>
                 <input input className='email' placeholder='  USERNAME *' type='text' value={userName} onChange={(e)=>handleusername(e.target.value)}></input><br></br>

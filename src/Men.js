@@ -1,13 +1,11 @@
 import React from 'react'
-import { useState,storeState } from 'react'
-import footer from './images/footer.jpg'
 import { Link } from 'react-router-dom'
 import { StoreState } from './StoreContext'
 import whishheart from './images/heartlog1o.png'
 // import whishheartblack from './images/Screenshot (18).png'
 
 function Men() {
-    const{name,setName,total,setTotal,image,setImage,cart,setCart,views,setViews,views1,setViews1,views2,setViews2,productcatelog,setProductcatelog}=StoreState();
+    const{setViews,setViews1,setViews2,productcatelog}=StoreState();
     function view(productphoto,productname,productprice){
         setViews(productphoto)
         setViews1(productname)
@@ -32,10 +30,10 @@ function Men() {
                 {filteredcatelog.map((a)=>
                     <Link to="/ViewingProducts" className='linkstoview'>
                         <button className='buttonforview' onClick={()=>view(a.image,a.name,a.Price)}>
-                            <img src={whishheart} className='heartbuttonpng' ></img>
+                            <img src={whishheart} className='heartbuttonpng' alt='adiddaslogo'></img>
                             <div className='prodbox' key={a.id}>
                                 <p className='productprice'>${a.Price}.00</p>
-                                <img className='productimage' src={a.image}></img>
+                                <img className='productimage' src={a.image} alt='adiddaslogo'></img>
                                 {a.name}
                                 <p className='grey'>originals</p>
                             </div>
