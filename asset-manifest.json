@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/adidas-clone/static/css/main.51b2a368.css",
-    "main.js": "/adidas-clone/static/js/main.1b401e2c.js",
+    "main.js": "/adidas-clone/static/js/main.8fa8ec5c.js",
     "static/media/241264.jpg": "/adidas-clone/static/media/241264.36b5ce4a87d0c2e547d5.jpg",
     "static/media/16.avif": "/adidas-clone/static/media/16.0aba64fb15e6bcaf2738.avif",
     "static/media/2.jpg": "/adidas-clone/static/media/2.252b188a55b629bc268a.jpg",
@@ -55,10 +55,10 @@
     "static/media/5.avif": "/adidas-clone/static/media/5.4fa952e0da913e1fefed.avif",
     "index.html": "/adidas-clone/index.html",
     "main.51b2a368.css.map": "/adidas-clone/static/css/main.51b2a368.css.map",
-    "main.1b401e2c.js.map": "/adidas-clone/static/js/main.1b401e2c.js.map"
+    "main.8fa8ec5c.js.map": "/adidas-clone/static/js/main.8fa8ec5c.js.map"
   },
   "entrypoints": [
     "static/css/main.51b2a368.css",
-    "static/js/main.1b401e2c.js"
+    "static/js/main.8fa8ec5c.js"
   ]
 }
