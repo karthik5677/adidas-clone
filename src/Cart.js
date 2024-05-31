@@ -1,7 +1,5 @@
-import React, { useContext, useState } from 'react'
-import { Store } from './App';
-import { BrowserRouter ,Link} from 'react-router-dom';
-import Page from './Page';
+import React, {useState } from 'react'
+import {Link} from 'react-router-dom';
 import { StoreState } from './StoreContext';
 import ProductsBox from './ProductsBox'
 
@@ -10,11 +8,11 @@ function Cart1(){
     const[q,setQ]=useState("");
     const[promo,setPromo]=useState(0);
     const[promodiscount,setPromodiscount]=useState(0);
-    const{total,setTotal,image,setImage,name,setName,cart,setCart,size,setSize,userdetails,setUserdetails,activeusername,setActiveUsername}=StoreState();
+    const{total,setTotal,cart,activeusername}=StoreState();
     const totalprice =cart.reduce((acc, item) => acc + item.price, 0);
     
 function addquantity(e){
-    setQuan(e);
+    setQuan(e + quan);
     }
 function removeproduct(id){
     
@@ -48,7 +46,7 @@ setTotal(totalprice-promodiscount);
                 {cart.map((a)=>
                     <li key={a.id}>
                         <div className='cartbox'>
-                            <img src={a.image} className='cartboximg'></img>
+                            <img src={a.image} className='cartboximg' alt='adiddaslogo'></img>
                             <div className='box20'>
                                 <div className='cartdescription'>{a.product.toUpperCase()}<p className='sizeshowincartbox' >Size: {a.size}</p><br></br><br></br></div>
                                 <input type='number' className='quantitybox' defaultValue={1} onChange={(e)=>addquantity(e.target.value)}></input>
