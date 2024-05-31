@@ -1,4 +1,4 @@
-import React, {  useContext, useState } from 'react'
+import React, {useState } from 'react'
 import "./App.css";
 import "./Products.css"
 import logo from './images/Adidas-Logo.jpg';
@@ -22,7 +22,7 @@ import { StoreState } from './StoreContext';
 
 
 function App() {
-  const{activeStatus,setActiveStatus,cart,setCart,productcatelog,setProductcatelog,activeusername,setActiveUsername,wishlist,setWhishlist}=StoreState();
+  const{activeStatus,cart,productcatelog,activeusername,wishlist}=StoreState();
   const[searchQuery,setSearchQuery]=useState()
   
   function searchprod(e){
@@ -38,7 +38,7 @@ function App() {
         
         {/* header */}
         <div className='header'>
-          <Link className='Linksmain' to="/Home"><img className='logo' src={logo}></img></Link>
+          <Link className='Linksmain' to="/Home"><img className='logo' src={logo} alt='adiddaslogo'></img></Link>
             <div className='mainbox'>
               <Link className='Linksmain' to="/Home"><p>HOME</p></Link>
               <Link className='Linksmain' to="/Men"><p>MEN</p></Link>
@@ -58,8 +58,8 @@ function App() {
               </div>
               <div className='inputvalue2'>
                 <input className='searchbox' placeholder='  Search' type='search' onChange={(e)=>searchprod(e.target.value)}></input>
-                <Link to='/Wishlist' >{wishlist.length > 0 && <p className='wishcount' >{wishlist.length}</p>}<img src={wishlistheart} className='wishlistheart'></img></Link>
-                <Link to='/Cart' >{cart.length > 0 && <p className='cartcount' >{cart.length}</p>}<img src={cartlogo} className='cartlogo'></img></Link>
+                <Link to='/Wishlist' >{wishlist.length > 0 && <p className='wishcount' >{wishlist.length}</p>}<img src={wishlistheart} className='wishlistheart' alt='adiddaslogo'></img></Link>
+                <Link to='/Cart' >{cart.length > 0 && <p className='cartcount' >{cart.length}</p>}<img src={cartlogo} className='cartlogo' alt='adiddaslogo'n></img></Link>
               </div>
             </div>
         </div>
