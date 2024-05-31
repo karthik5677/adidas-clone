@@ -21,7 +21,7 @@ function Men() {
             {/* navigation */}
             <div className='webpagenavigation'>
                 <button className='websitebackbutton' onClick={() => window.history.back()}>← Back</button>
-                <Link to='/Wishlist' className='Links'><p className='websitebackbutton'>Home</p></Link>
+                <Link to='/Home' className='Links'><p className='websitebackbutton'>Home</p></Link>
             </div>
             <div className='womenpageheader'>
                 <p className='Womenpageheading'>WOMENS SNEAKES & SHOES </p>
@@ -44,7 +44,6 @@ function Men() {
                     </Link>
                 )}
             </div>
-            <img className='footer' src={footer}></img>
         </div>
     )
 }

@@ -84,7 +84,10 @@ function App() {
         
         
     </div>
-  
+    <p className='footerbox'>
+          <p className='footerboxtext'>Privacy Policy &nbsp;&nbsp;|&nbsp;&nbsp; Terms and Conditions &nbsp;&nbsp;|&nbsp;&nbsp; Cookies</p>
+          <p className='footerboxtext'>@2024 adidas clone by | &nbsp;karthik M &nbsp;|&nbsp;9600732925</p>  
+    </p>
     </BrowserRouter>
     
   

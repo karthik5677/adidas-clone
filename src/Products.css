@@ -65,6 +65,7 @@
 .viewPRdName{font-size:28px;font-weight: 700;margin: 5px 0px 0px 0px;}
 
 .viewingpageheartbutton{height: 23px;width: 25px}
+.viewingpage{height:1300px}
 
 .sizeboxestable{width: 368px;height: 122px;border-collapse: collapse;margin-top: 8px;border:1px solid rgb(255, 255, 255)}
 
@@ -138,6 +139,7 @@
 .popbutton1:hover,.popbutton2:hover{cursor: pointer;color: #828282;transition: 200ms;}
 
 /* page */
+.Pagejsscreen{height:800px;background-color: rgb(255, 255, 255);}
 .loginmessage{margin: 60px 0px 0px 200px;font-size:37px;font-weight:600;}
 
 .loginbutton{text-decoration: none;color: #ffffff;background-color: rgb(0, 0, 0);height: 40px;width: 250px;margin: 10px 0px 0px 200px ;font-size:medium;display: flex;align-items: center;justify-content: center;}
@@ -152,7 +154,7 @@
 .headerbox2items{font-size:15px;font-weight:500;color: rgb(97, 97, 97)}
 .checkoutpagebox1{height: 820px;border: 1px solid rgb(255, 255, 255);display: flex;}
 
-.checkoutpagebox1a{height: 820px;width:600px;border: 2px solid rgb(255, 255, 255);margin-left: 200px;}
+.checkoutpagebox1a{height:600px;width:600px;border: 2px solid rgb(255, 255, 255);margin-left: 200px;}
 .contactbox{height: 120px;border-bottom: 1px solid rgb(191, 191, 191)}
 .contactheading{font-size:18px;font-weight:600;margin-top:20px;margin-bottom: 20px;}
 .contactgmail{font-size:14px;margin-top: 20px;}
@@ -173,7 +175,7 @@
 .debitcardimage{height: 200px;width: 320px;}
 
 /* Womens */
-.womenswholepage{background-color: rgb(255, 255, 255);height: 1800px;}
+.womenswholepage{background-color: rgb(255, 255, 255);height: auto;}
 
 .mainboxcatelog{height:auto;width: 1290px;border: 1px solid rgb(255, 255, 255);display: grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-row-gap:10px;grid-column-gap:1px;;margin:40px 0px 0px 120px;}
 
@@ -194,7 +196,7 @@
 .productprice{position: absolute;margin: 277px 0px 0px 4px;background-color: #ffffff;}
 
 /* wishlistpage */
-.wholewishlistpage{height: 900px;background-color: aliceblue;}
+.wholewishlistpage{height: 900px;background-color: rgb(255, 255, 255);}
 .wishlistheading{margin: 80px 0px 0px 200px;font-size:30px;font-weight:600;}
 .wishlistsubheading{margin: 0px 0px 0px 200px;font-size:15px;font-weight:300;}
 .wishlistbox1{display: grid;border: 1px solid rgb(255, 255, 255);height:auto;width:970px;grid-template-columns: 1fr 1fr 1fr 1fr ;grid-column-gap: 14px;grid-row-gap:20px ;margin: 30px 0px 0px 200px}

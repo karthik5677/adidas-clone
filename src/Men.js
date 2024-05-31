@@ -20,7 +20,7 @@ function Men() {
             {/* navigation */}
             <div className='webpagenavigation'>
                 <button className='websitebackbutton' onClick={() => window.history.back()}>← Back</button>
-                <Link to='/Wishlist' className='Links'><p className='websitebackbutton'>Home</p></Link>
+                <Link to='/Home' className='Links'><p className='websitebackbutton'>Home</p></Link>
             </div>
             <div className='womenpageheader'>
                 <p className='Womenpageheading'>MEN SLIDES & SLIPPERS </p>
@@ -32,7 +32,7 @@ function Men() {
                 {filteredcatelog.map((a)=>
                     <Link to="/ViewingProducts" className='linkstoview'>
                         <button className='buttonforview' onClick={()=>view(a.image,a.name,a.Price)}>
-                            <button ><img src={whishheart} className='heartbuttonpng' ></img></button>
+                            <img src={whishheart} className='heartbuttonpng' ></img>
                             <div className='prodbox' key={a.id}>
                                 <p className='productprice'>${a.Price}.00</p>
                                 <img className='productimage' src={a.image}></img>
@@ -43,7 +43,6 @@ function Men() {
                     </Link>
                 )}
             </div>
-            <img className='footer' src={footer}></img>
         </div>
     )
 }

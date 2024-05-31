@@ -105,10 +105,10 @@ function StoreContext({children}){
     {id:`${new Date()}`,name:"COPA Pure 2 Lague FG",Price:18999.00,image:img38,category:"sportscopa",wishlist:"no"},
     {id:`${new Date()}`,name:"COPA Pure League Turf Boots",Price:18999.00,image:img39,category:"sportscopa",wishlist:"no"},
     {id:`${new Date()}`,name:"COPA Pure Club Flexible Boots",Price:18999.00,image:img40,category:"sportscopa",wishlist:"no"},
-    {id:`${new Date()}`,name:"hoodies1",Price:18999.00,image:img41,category:"hoodies",wishlist:"no"},
-    {id:`${new Date()}`,name:"hoodies2",Price:18999.00,image:img42,category:"hoodies",wishlist:"no"},
-    {id:`${new Date()}`,name:"hoodies3",Price:18999.00,image:img43,category:"hoodies",wishlist:"no"},
-    {id:`${new Date()}`,name:"hoodies4",Price:18999.00,image:img44,category:"hoodies",wishlist:"no"},
+    {id:`${new Date()}`,name:"ESSENTIALS HOODIE",Price:10999.00,image:img41,category:"hoodies",wishlist:"no"},
+    {id:`${new Date()}`,name:"NEW ADIDAS Z.N.E. PREMIUM HOODIE",Price:17999.00,image:img42,category:"hoodies",wishlist:"no"},
+    {id:`${new Date()}`,name:"BSC 3-STRIPES HOODED INSULATED JACKET",Price:999.00,image:img43,category:"hoodies",wishlist:"no"},
+    {id:`${new Date()}`,name:"Y-3 TECH SILK ZIP HOODIE - 3-STRIPES",Price:599.00,image:img44,category:"hoodies",wishlist:"no"},
   ]);
   
   const[wishlist,setWhishlist]=useState([])

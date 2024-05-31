@@ -14,7 +14,7 @@ function Page() {
 
 
   return (
-    <div>
+    <div className='Pagejsscreen'>
 
       {activeStatus ===0 ?
         <div>

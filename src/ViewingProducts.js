@@ -21,9 +21,8 @@ function ViewingProducts() {
             setCart([...cart,a])
             if(cart.some((a)=> a.product === nameofProduct)){
                 setErrormsg('Item added to your Bag, There is another product of different size already in your Bag!');
-            }else{setErrormsg('Item added to your Bag!');}
+            }else{setErrormsg('Item added to your Bag!');window.scrollTo(0,140)}
             
-            window.scrollTo(0,0)
         }
     }
     function closepopup(){setErrormsg('');setSize(0);}
