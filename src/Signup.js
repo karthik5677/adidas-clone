@@ -1,9 +1,9 @@
 import { StoreState } from './StoreContext'
-import React, { useState } from 'react'
+import React from 'react'
 
 
 function Signup() {
-  const{userdetails,setUserdetails,activeusername,setActiveusername}=StoreState();
+  const{userdetails}=StoreState();
 
 
 

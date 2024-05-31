@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 
 
 function Wishlist() {
-    const{name,setName,total,setTotal,image,setImage,cart,setCart,views,setViews,
-        views1,setViews1,views2,setViews2,productcatelog,setProductcatelog,wishlist,setWishlist}=StoreState();
+    const{setViews,setViews1,setViews2,wishlist}=StoreState();
 
 
     function view(productphoto,productname,productprice){
@@ -34,8 +33,8 @@ function Wishlist() {
         <button className='buttonforview' onClick={()=>view(a.image,a.product,a.price)}>
         <div className='wishlistbox2' key={a.id}>
             <p className='wishboxprice'>${a.price}.00</p>
-            <img src={whishheart} className='wishboxheart'/>
-            <img src={a.image} className='wishboximage'/>
+            <img src={whishheart} className='wishboxheart' alt='adiddaslogo'/>
+            <img src={a.image} className='wishboximage' alt='adiddaslogo'/>
             {a.product}
         </div>
         </button>

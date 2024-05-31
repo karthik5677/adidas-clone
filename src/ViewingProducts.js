@@ -1,12 +1,12 @@
-import React, { useContext, useState } from 'react'
+import React, {useState } from 'react'
 import { StoreState } from './StoreContext';
-import { BrowserRouter, Routes,Route ,Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import wishlistheart from './images/heartlog1o - Copy.png'
 
 
 
 function ViewingProducts() {
-    const{views,setViews,views1,setViews1,views2,setViews2,cart,setCart,size,setSize,wishlist,setWhishlist}=StoreState();
+    const{views,views1,views2,cart,setCart,size,setSize,wishlist,setWhishlist}=StoreState();
     const[errormsg,setErrormsg]=useState('');
     function sizecount(e){
         setSize(e)
@@ -42,8 +42,8 @@ function ViewingProducts() {
             <div className='viewbox1'>
                 <div>
                     <div className='viewbox1part1'>
-                        <img className='viewphoto' src={views}></img>
-                        <img className='viewphotomirrored' src={views}></img>
+                        <img className='viewphoto' src={views} alt='adiddaslogo'></img>
+                        <img className='viewphotomirrored' src={views} alt='adiddaslogo'></img>
                         {/* popupmessage */}
 
                         {errormsg.length === 23 && <button className='popupbackground' onClick={closepopup}><div className='popupbackground'></div></button>}
@@ -56,7 +56,7 @@ function ViewingProducts() {
                             </div>
                             <div className='popupmessageboxinside'>
                                 <div className='popupmessagebox1'>
-                                    <div className='popupmessagebox1part1'><img className='popupboximage' src={views}></img></div>
+                                    <div className='popupmessagebox1part1'><img className='popupboximage' src={views} alt='adiddaslogo'></img></div>
                                     <div className='popupmessagebox1part2'>
                                         <p className='popname'>{views1.toUpperCase()}</p>
                                         <p className='popprice'>${views2}.00</p>
@@ -114,7 +114,7 @@ function ViewingProducts() {
                         <p className="mrpwordtax">(inclusive of all taxes)</p>
                         <p className='mrpwordcolor'>Colors</p>
                         <div className='productcolorbox'>
-                            <img className='viewphotoforcolorselection' src={views}></img>
+                            <img className='viewphotoforcolorselection' src={views} alt='adiddaslogo'></img>
                         </div>
                         <p className='mrpwordcolorlist'>Aurora Black / Signal Orange / Dash Grey</p>
                         <p className='mrpwordsize'>Sizes</p>
@@ -141,7 +141,7 @@ function ViewingProducts() {
                         <p className='stockmessge'>{errormsg}</p>
                         <div className='addingbox'>
                             <button className='addtocartmain' onClick={()=>addtocart(views1,size)}><span>&nbsp;&nbsp;&nbsp;ADD TO CART</span><div>⟶&nbsp;&nbsp;&nbsp;</div></button>
-                            <div onClick={()=>addtowishlist(views1)} className='addtocartmainwhishlistbox'><img src={wishlistheart} className='viewingpageheartbutton'></img></div>
+                            <div onClick={()=>addtowishlist(views1)} className='addtocartmainwhishlistbox'><img alt='adiddaslogo' src={wishlistheart} className='viewingpageheartbutton'></img></div>
                         </div>
 
                         
