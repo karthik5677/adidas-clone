@@ -10,7 +10,7 @@ import whishheart from './images/heartlog1o.png'
 
 
 function Home() {
-  
+
   const{activeStatus,setActiveStatus,productcatelog,setProductcatelog,views,setViews,views1,setViews1,views2,setViews2}=StoreState();
   const filteredproduct =productcatelog.filter((a)=> a.category ==="hoodies")
   function view(productphoto,productname,productprice){
