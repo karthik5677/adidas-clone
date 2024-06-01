@@ -40,7 +40,7 @@ function App() {
         <div className='header'>
           <Link className='Linksmain' to="/Home"><img className='logo' src={logo} alt='adiddaslogo'></img></Link>
             <div className='mainbox'>
-              <Link className='Linksmain' to="/Home"><p>HOME</p></Link>
+              <Link className='Linksmain' to="/Home"><p>HOME.</p></Link>
               <Link className='Linksmain' to="/Men"><p>MEN</p></Link>
               <Link className='Linksmain' to="/Women"><p>WOMEN</p></Link>
               <Link className='Linksmain' to='/Sports'>SPORTS</Link>
@@ -69,7 +69,7 @@ function App() {
         </div>    
         <Routes>
           <Route path="/Cart" element={<Cart/>}/>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/adidas-clone" element={<Home/>}/>
           <Route path="/Home" element={<Home/>}/>
           <Route path="/Men" element={<Men/>}/>
           <Route path="/Women" element={<Women/>}/>
