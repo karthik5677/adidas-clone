@@ -4,6 +4,7 @@ import "./Products.css"
 import logo from './images/Adidas-Logo.jpg';
 import cartlogo from './images/carticon.png'
 import wishlistheart from './images/heartlog1o.png'
+import searchicon from './images/search.png'
 import { BrowserRouter, Routes,Route ,Link } from 'react-router-dom';
 import Cart from './Cart';
 import Home from './Home';
@@ -40,7 +41,7 @@ function App() {
         <div className='header'>
           <Link className='Linksmain' to="/Home"><img className='logo' src={logo} alt='adiddaslogo'></img></Link>
             <div className='mainbox'>
-              <Link className='Linksmain' to="/Home"><p>HOME.</p></Link>
+              <Link className='Linksmain' to="/Home"><p>HOME</p></Link>
               <Link className='Linksmain' to="/Men"><p>MEN</p></Link>
               <Link className='Linksmain' to="/Women"><p>WOMEN</p></Link>
               <Link className='Linksmain' to='/Sports'>SPORTS</Link>
@@ -58,6 +59,7 @@ function App() {
               </div>
               <div className='inputvalue2'>
                 <input className='searchbox' placeholder='  Search' type='search' onChange={(e)=>searchprod(e.target.value)}></input>
+                <img src={searchicon} className='searchicon' alt='adiddaslogo'></img>
                 <Link to='/Wishlist' >{wishlist.length > 0 && <p className='wishcount' >{wishlist.length}</p>}<img src={wishlistheart} className='wishlistheart' alt='adiddaslogo'></img></Link>
                 <Link to='/Cart' >{cart.length > 0 && <p className='cartcount' >{cart.length}</p>}<img src={cartlogo} className='cartlogo' alt='adiddaslogo'n></img></Link>
               </div>

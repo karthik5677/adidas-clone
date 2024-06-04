@@ -32,7 +32,6 @@ function promocheck(){
     
 }
 setTotal(totalprice-promodiscount);
-
   return (
     <div className='cart'>
         <div className='cart1'>
@@ -64,17 +63,6 @@ setTotal(totalprice-promodiscount);
                 
                 </div>
            }
-
-
-            
-
-
-
-
-
-
-
-
         </div>
         
         {cart.length !==0 && 

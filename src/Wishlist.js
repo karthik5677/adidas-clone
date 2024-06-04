@@ -22,7 +22,7 @@ function Wishlist() {
         <h1 className='wishlistheading'>MY WISHLIST</h1>
         <p className='wishlistheading1'>[{wishlist.length}]</p>
         </div><br></br>
-        {wishlist.length > 0 ?<p className='wishlistsubheading'>{wishlist.length} ITEMS</p> : <p className='wishlistsubheading'>Your Wishlist is empty, 
+        {wishlist.length > 0 ?<p className='wishlistsubheading'>{wishlist.length} ITEMS</p> : <p className='wishlistsubheading1'>Your Wishlist is empty, 
         Add products to wishlist using the hearticon.<br></br>Item's added to wishlist once can't be removed, Dont worry! it can be added to Cart anytime. </p>}
         
 

@@ -143,8 +143,6 @@ function ViewingProducts() {
                             <button className='addtocartmain' onClick={()=>addtocart(views1,size)}><span>&nbsp;&nbsp;&nbsp;ADD TO CART</span><div>⟶&nbsp;&nbsp;&nbsp;</div></button>
                             <div onClick={()=>addtowishlist(views1)} className='addtocartmainwhishlistbox'><img alt='adiddaslogo' src={wishlistheart} className='viewingpageheartbutton'></img></div>
                         </div>
-
-                        
                         <div className='returndetails'>
                             <p>Free Delivery, Free Returns</p>
                             <p>COD available for orders below ₹5000</p>
