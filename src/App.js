@@ -7,11 +7,12 @@ import wishlistheart from './images/heartlog1o.png'
 import searchicon from './images/search.png'
 import { BrowserRouter, Routes,Route ,Link } from 'react-router-dom';
 import Cart from './Cart';
+import OrdersandReutrnspage from './OrdersandReutrnspage';
 import Home from './Home';
 import Signup from './Signup';
 import Logging from './Logging';
-import Pf from './Pf';
 import Page from './Page';
+import Confirmedorderpage from './Confirmedorderpage';
 import Men from './Men'
 import Women from './Women';
 import Sports from './Sports'
@@ -53,9 +54,8 @@ function App() {
               <div className='inputvalue'> 
                 <p>Help</p>
                 <Link to='/Wishlist' className='Links'><p>whishlist</p></Link>
-                {/* <Link className='Links' to="/Signup">Signup</Link> */}
                 {activeStatus ===0 ? <p><Link className='Linksnotactive' to="/Logging">Login</Link></p> : <Link className='Linksactive' to="/Logging">&nbsp;welcome back {activeusername.toLowerCase()}</Link>}
-                <Link className='Links' to="/Cart">Orders and Returns</Link>
+                <Link className='Links' to="/OrdersandReutrnspage">Orders and Returns</Link>
               </div>
               <div className='inputvalue2'>
                 <input className='searchbox' placeholder='  Search' type='search' onChange={(e)=>searchprod(e.target.value)}></input>
@@ -71,6 +71,7 @@ function App() {
         </div>    
         <Routes>
           <Route path="/Cart" element={<Cart/>}/>
+          <Route path="/OrdersandReutrnspage" element={<OrdersandReutrnspage/>}/>
           <Route path="/adidas-clone" element={<Home/>}/>
           <Route path="/Home" element={<Home/>}/>
           <Route path="/Men" element={<Men/>}/>
@@ -78,8 +79,8 @@ function App() {
           <Route path="/Sports" element={<Sports/>}/>
           <Route path="/Signup" element={<Signup/>}/>
           <Route path="/Logging" element={<Logging/>}/>
-          <Route path="/Pf" element={<Pf/>}/>
           <Route path="/Page" element={<Page/>}/>
+          <Route path="/Confirmedorderpage" element={<Confirmedorderpage/>}/>
           <Route path="/Wishlist" element={<Wishlist/>}/>
           <Route path="/ViewingProducts" element={<ViewingProducts/>}/>
         </Routes>

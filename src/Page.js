@@ -1,9 +1,27 @@
 import {Link } from 'react-router-dom';
+import React, { useState } from 'react'
 import { StoreState } from './StoreContext';
 import img1 from './images/carticon.png'
 
+
 function Page() {
-  const{activeStatus,total,cart,userdetails}=StoreState();
+  const{activeStatus,total,cart,setCart,userdetails,orders,setOrders,userdetailsaddress,setUserdetailsaddress}=StoreState();
+  const[errmsg,setErrmsg]=useState('');
+
+  function placedorder(){
+    const a= cart.map(item=>item)
+    if(userdetailsaddress.length === 0){setErrmsg("Enter your delivery address to place order.")}
+    else if(userdetailsaddress.length < 10){setErrmsg("Delivery address should atleast contain ten characters!")}
+    else{
+      setOrders([...a])
+      window.scrollTo(0,0)
+      setCart([])
+    }
+  }
+  function addaddress(add){
+    setUserdetailsaddress(add)
+  }
+
   return (
     <div className='Pagejsscreen'>
 
@@ -28,15 +46,18 @@ function Page() {
             <div className='checkoutpagebox1a'>
               <div className='contactbox'>
                 <p className='contactheading'>CONTACT</p>
-                <p className='contactgmail'>{userdetails.map((a)=><p key={a.id}>{a.useremail}</p>)}</p>
+                <p className='contactgmail'>{userdetails.map((a)=>a.useremail)}</p>
               </div>
               <div>
               <p className='contactheading'>ADDRESS</p>
               <h6 className='contactgmail'>Delivery address</h6><br></br>
-              <input className='inputboxadressdetails' placeholder='FIRST NAME*'></input><br></br><br></br>
-              <input className='inputboxadressdetails' placeholder='LAST NAME*'></input><br></br><br></br>
-              <input className='inputboxadressdetails' placeholder='DELIVERY ADDRESS*'></input><br></br>
-              <Link className='confirmorderutton'  >CONFIRM ORDER ⟶</Link>
+              <input className='inputboxadressdetails' placeholder='FIRST NAME '></input><br></br><br></br>
+              <input className='inputboxadressdetails' placeholder='LAST NAME '></input><br></br><br></br>
+              <input className='inputboxadressdetails' onChange={(e)=>addaddress(e.target.value)} placeholder='DELIVERY ADDRESS*'></input><br></br>
+              <p className='errormesssageodrrtnpage'>{errmsg}</p>
+              {userdetailsaddress.length < 10 
+               ? <button className='confirmorderutton' onClick={placedorder}>CONFIRM ORDER ⟶</button>
+               :<Link className='confirmorderutton' to="/Confirmedorderpage" onClick={placedorder}>CONFIRM ORDER ⟶</Link> }
               
               </div>
               

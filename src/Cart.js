@@ -15,7 +15,6 @@ function addquantity(e){
     setQuan(e + quan);
     }
 function removeproduct(id){
-    
     const a=cart.findIndex((item)=>item.id === id)
     cart.splice(a,1)
 }
@@ -55,16 +54,12 @@ setTotal(totalprice-promodiscount);
                     </li>
                 )}
             </ul>
-           
            {cart.length > 0 &&
                 <div>
-                    {/* work area */}
                     <ProductsBox/>
-                
                 </div>
            }
         </div>
-        
         {cart.length !==0 && 
             <div className='cart2'>
                 <Link className='Links' to="/Page"><button className='checkoutbutton'><p className='checkoutfont'>CHECKOUT</p><p className='arrow'>⟶</p></button></Link>

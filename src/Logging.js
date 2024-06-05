@@ -14,6 +14,7 @@ function Signup() {
   const[password,setPassword]=useState('');
   const[mobile,setMobile]=useState('')
   const[errormessage,setErrormessage]=useState("")
+  const[checkbox,setCheckbox]=useState(3)
   function handleemail(e){
     setEmail(e);
   }
@@ -27,6 +28,7 @@ function Signup() {
   function handlemobilenumber(e){
     setMobile(e)
   }
+  function handlecheckbox(){setCheckbox(checkbox + 1)}
   function handlesubmit(e){
     e.preventDefault()
     if(email.length === 0){setErrormessage("Please fill all the fields to continue!")}
@@ -34,6 +36,7 @@ function Signup() {
     else if(password.length < 6 ){setErrormessage("Password should contain atleast six character! ")}
     else if(mobile.length < 10){setErrormessage("Enter ten digit mobile number to continue!")}
     else if(mobile.length > 10){setErrormessage("Phone number too long!")}
+    else if(checkbox < 2 ){setErrormessage("check the boxes to continue!")}
     else{
       const a= {id:1,useremail:email,username:userName,userpassword:password,usermobilenumber:mobile}
       setUserdetails([...userdetails,a])
@@ -77,8 +80,8 @@ function Signup() {
                 <input input className='email' placeholder='  USERNAME *' type='text' value={userName} onChange={(e)=>handleusername(e.target.value)}></input><br></br>
                 <input className='email' placeholder='  PASSWORD *' type='password' value={password} onChange={(e)=>handlepassword(e.target.value)}></input><br></br>
                 <input className='email' placeholder='  MOBILE *' type='number'value={mobile} onChange={(e)=>handlemobilenumber(e.target.value)}></input><br></br>
-                <p className='s1'><input type='checkbox'className='checkbox'></input> I would like to stay up to date with adidas. I agree to receive personalised marketing messages from adidas India Marketing Pvt. Ltd.</p>
-                <p className='s1'><input type='checkbox'className='checkbox'></input> I have read and accepted the Terms & Conditions.</p>
+                <p className='s1'><input type='checkbox'className='checkbox'  onClick={handlecheckbox}></input> I would like to stay up to date with adidas. I agree to receive personalised marketing messages from adidas India Marketing Pvt. Ltd.</p>
+                <p className='s1'><input type='checkbox'className='checkbox' onClick={handlecheckbox}></input> I have read and accepted the Terms & Conditions.</p>
                 <p className='signinerrormessage'>{errormessage}</p>
                 <button className='checkoutbutton1' type="submit" onClick={handlesubmit}>CONTINUE ⟶</button>
                 {/* <Link to='/Cart' ><button className='checkoutbutton1' type="submit" onClick={handlesubmit}>CONTINUE ⟶</button></Link> */}

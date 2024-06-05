@@ -117,8 +117,10 @@ function StoreContext({children}){
   const[total,setTotal]=useState();
   const[image,setImage]=useState();
   const[cart,setCart]=useState([]);
+  const[orders,setOrders]=useState([]);
   const[catelog,setCatelog]=useState([]);
   const[userdetails,setUserdetails]=useState([]);
+  const[userdetailsaddress,setUserdetailsaddress]=useState('');
   const[activeusername,setActiveUsername]=useState('');
   const[size,setSize]=useState(0)
 
@@ -134,11 +136,11 @@ function StoreContext({children}){
   
   return(
     <Store.Provider value={{
-      name,setName,total,setTotal,
+      name,setName,total,setTotal,orders,setOrders,
       image,setImage,cart,setCart,activeStatus,setActiveStatus,
       catelog,setCatelog,userdetails,setUserdetails,views,setViews,
       views1,setViews1,views2,setViews2,size,setSize,
-      productcatelog,setProductcatelog,activeusername,setActiveUsername,wishlist,setWhishlist
+      productcatelog,setProductcatelog,activeusername,setActiveUsername,wishlist,setWhishlist,userdetailsaddress,setUserdetailsaddress
       }}>
         {children}
     </Store.Provider>

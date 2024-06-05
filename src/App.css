@@ -243,11 +243,11 @@ form{border:1px solid rgb(255, 255, 255);height:500px;width: 500px;margin-top:14
 .helpbox{
   border: 2px solid rgb(255, 255, 255);
   font-size:10.5px;
-  width:22vw;
+  width:auto;
   height:11vh;
   margin:3px 50px 0px 0px;
 }
-.inputvalue{display: flex;background-color: #ffffff;justify-content: space-evenly;width:auto;margin-top: 7px;}
+.inputvalue{display: flex;background-color: #ffffff;justify-content: space-evenly;width:auto;margin-top: 7px;gap:15px;}
 .inputvalue2{display: flex;border: 2px solid rgb(255, 255, 255);}
 .searchbox{
   color: #000;

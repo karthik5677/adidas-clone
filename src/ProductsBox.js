@@ -1,13 +1,9 @@
-
 import img2 from './images/13.avif'
 import img3 from './images/14.avif'
 import img4 from './images/15.avif'
 import img5 from './images/16.avif'
 import React from 'react'
-
 function ProductsBox() {
-
-
   return (
     <div>
       <p className='carttoppicks'>TOP PICKS FRO YOU</p>
@@ -18,16 +14,8 @@ function ProductsBox() {
         <div className='CARTrecomdationsobj'><img className='CARTrecomdationsobj1' src={img5} alt='adiddaslogo'></img>Rivalry Low shoes</div> 
     </div>
     <div>
-
     </div>
-
-    
-
-
     </div>
-    
-    
   )
 }
-
 export default ProductsBox

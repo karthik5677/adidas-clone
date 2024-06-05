@@ -207,3 +207,61 @@
 .wishlistbox2:hover{.wishboxprice{margin: 190px 0px 0px 4px;transition: 300ms}border: 1px solid black}
 .wishboxheart{height:18px;width:20px;margin: 10px 0px 0px 208px;position: absolute;}
 .wishlistheading1{font-size:13px;margin:96px 0px 0px 5px;color: #747474;}
+
+
+/* Confirmedorderpage */
+.greentickorderplaced{height:40px;width:45px;margin: 48px 0px 0px 30px;position:absolute}
+.homeiconorderplaced{height:40px;width:45px;margin: 35px 0px 0px 3px;position:absolute}
+
+.Confirmedorderpage{display: flex;height: auto;border: 1px solid rgb(255, 255, 255);background-color:rgb(255, 255, 255)}
+.Confirmedorderpage1{height: 800px;border: 1px solid rgb(255, 255, 255);width:650px;margin-left:200px;}
+.Confirmedorderpage2{height: 800px;border: 1px solid rgb(255, 255, 255);width:580px;margin-left:80px;}
+.confirmorderhead1{font-size: 26px;font-weight: 600;margin: 70px 0px 0px 0px;}
+.confirmorderhead2{font-size:14px;margin: 18px 0px 0px 0px;height:100px;width:650px;display: flex;align-items: center;background-color: #e8e8e8;}
+.confirmorderhead2text{margin: 0px 0px 0px 70px;}
+.confirmorderhead3{font-size:13px;margin: 20px 0px 0px 0px;}
+.confirmorderhead5{font-size: 20px;font-weight: 600;margin: 20px 0px 0px 0px;}
+.confirmorderhead4{text-decoration: none;color: #000000;height: 40px;width: 200px;margin: 20px 460px 0px 0px;font-size:15px;font-weight: 600;display: flex;align-items: center;justify-content: center;border: 1px solid rgb(0, 0, 0);}
+.confirmorderhead4:hover{color: gray;}
+.confirmorderpage2head1{display: flex;}
+.confirmorderpage2box{height:50px;border: 1px solid rgb(0, 0, 0);width:50px;margin: 28px 0px 0px 0px;}
+.confirmorderpage2boxhead1{margin: 22px 0px 0px 10px;font-size:15px;font-weight:600;}
+.confirmorderpage2boxhead2{margin: 0px 0px 0px 10px;font-size: 14px;}
+
+/* OrdersandReutrnspage */
+.hedericonsordrrtnpage{height:75px;width:600px;margin: 0px 0px 0px 0px;}
+
+.OrdersandReutrnspage{display: flex;height: auto;border: 1px solid rgb(255, 255, 255);}
+.OrdersandReutrnspage1{height:auto;border: 1px solid rgb(255, 255, 255);width:650px;margin-left:200px;}
+.OrdersandReutrnspage2{height: auto;border: 1px solid rgb(255, 255, 255);width:580px;margin-left:80px;}
+.odrrtnpage1box_product1{height:210px;border: 1px solid rgb(255, 255, 255);width:550px;margin: 28px 0px 0px 0px;display: flex;}
+.odrrtnpage1box{height:80px;border: 1px solid rgb(0, 0, 0);width:602px;margin:50px 0px 0px 0px;}
+.odrrtnpage1{margin: 20px 0px 0px 0px;font-size: 15px}
+.odrrtnpage2{margin: 0px 0px 0px 0px;font-size: 17px;font-weight:600}
+.odrrtnpage2ordedetails{margin: 50px 0px 0px 0px;font-size: 17px;font-weight:600}
+.odrrtnpage2-a{margin: 10px 0px 0px 0px;font-size: 17px;font-weight:600}
+.OrdersandReutrnspageimage{height:200px;width:200px;}
+.odrrtnpage-a1{margin: 0px 0px 0px 40px;font-size: 17px;font-weight:300}
+.odrrtnpage-a2{margin: 2px 0px 0px 40px;font-size: 15px;font-weight:300;color: #777777;}
+.odrrtnpage-a21{margin: 8px 0px 0px 0px;font-size: 15px}
+.odrrtnpage2Pin{font-weight:600}
+
+.OrdersandReutrnspage2-1{margin: 2px 0px 50px 0px;height:150px;width:480px;border-bottom: 1px solid rgb(201, 201, 201);display: flex;}
+.ordrrtnbox1{margin: 2px 0px 0px 0px;height:150px;width:240px;border: 1px solid rgb(255, 255, 255)}
+.ordrrtnbox2{margin: 2px 0px 0px 0px;height:150px;width:240px;border: 1px solid rgb(255, 255, 255);text-align: end}
+.odrrtnpage2delviverysub{margin: 25px 0px 0px 0px;font-size: 16px;font-weight:500}
+.cvbn{display: flex}
+
+.falseorderspgwhole{height:auto;border: 1px solid rgb(255, 255, 255);width:580px;margin:50px 0px 0px 200px;}
+.falseorderspg3{height:60px;border: 1px solid rgb(0, 0, 0);width:580px;margin:20px 0px 0px 0px;font-size: 15px;}
+.falseorderspg6{
+  height:50px;border: 1px solid rgb(0, 0, 0);width:200px;
+  margin:55px 0px 0px 0px;font-size: 15px;background-color: #000000;color: #ffffff;
+}
+.falseorderspg6:hover{color: #909090;cursor: pointer;}
+.falseorderspg5{height:70px;border-bottom: 1px solid rgb(199, 199, 199);width:580px;margin:20px 0px 0px 0px;border-top: 1px solid rgb(200, 200, 200)}
+.falseorderspg5-a{font-size: 15px;font-weight:300;margin: 22px 0px 0px 20px;}
+.falseorderspg{margin: 10px 0px 0px 0px;font-size: 24px;font-weight:600}
+.falseorderspg1{margin: 10px 0px 0px 0px;font-size:15px}
+.falseorderspg2{margin: 30px 0px 0px 0px;font-size: 19px;font-weight:600}
+.errormesssageodrrtnpage{margin: 20px 0px 0px 0px;font-size:10px;color: #ff0000;position: absolute;}
