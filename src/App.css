@@ -291,8 +291,8 @@ form{border:1px solid rgb(255, 255, 255);height:500px;width: 500px;margin-top:14
 .hoodiesheading{border:1px  solid #000000;width:140px;height:45px;margin:40px 0px 0px 0px;display: flex;justify-content: center;align-items: center;font-weight: 600;color: #000000;background-color: #ffffff;}
 .hoodiebox1{display: grid;border:1px  solid #ffffff;height:420px;grid-template-columns: 1fr 1fr 1fr 1fr;width: 1250px;margin:50px 0px 0px 100px;gap:10px;}
 .hoodiesheadingheader{display: flex;gap:20px;width:520px;border:1px  solid #ffffff;margin:0px 0px 0px 100px;}
-.shopnow{color: #ff0000;margin: 380px 0px 0px 70px;position: absolute;font-size:38px;font-weight:700;}
-.shopnow:hover{color: #ffffff;margin: 380px 0px 0px 60px;position: absolute;font-size:40px;font-weight:700;letter-spacing:5px;transition:600ms;cursor: pointer;}
+.shopnow{color: #ffffff;margin: 380px 0px 0px 70px;position: absolute;font-size:38px;font-weight:700;}
+.shopnow:hover{color: #ffffff;margin: 380px 0px 0px 60px;position: absolute;font-size:40px;font-weight:700;letter-spacing:2px;transition:600ms;cursor: pointer;}
 .shopnowsubheading{color: #ffffff;margin: 440px 0px 0px 70px;position: absolute;font-size:16px;font-weight:400}
 .home32{background-color: rgb(255, 255, 255);}
 
